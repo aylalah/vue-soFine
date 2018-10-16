@@ -1,7 +1,7 @@
 
 <template>
   <div id="app">
-<div class="container-fliud">
+<div class="container">
 <h2>Rate US</h2>
 <hr>
    <label class="customcheck"><i>Happy</i>
@@ -24,7 +24,7 @@
         <button class="btn btn-danger float-right">Rate</button>
       </div>
       </div>
-  </div>
+  
 </template>
 
 <script>
