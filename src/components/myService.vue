@@ -2,12 +2,12 @@
   <div>
 
    <div class="card">
-    <div class="card-body">
+   <div class="card-body">
        <div class="list-group">
   <a  class="list-group-ite d-flex justify-content-between align-items-center list-group-item-action ">Existing Services
    <span class="badge badge-light badge-pill"><i class="fa fa-chevron-right"></i></span>
          </a>
-              </div>
+         </div>     
     </div>
   </div>
   <div class="card">
@@ -51,6 +51,9 @@ export default {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    width:100%;
+    height:10%
+
 }
 
 /* On mouse-over, add a deeper shadow */
