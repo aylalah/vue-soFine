@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/vue-material.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/theme/default.css">
+
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="./assets/img/favicon.png">
@@ -21,7 +26,9 @@
     <link href="./assets2/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="./assets2/css/style.min.css" rel="stylesheet">
-
+      <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="awesome-bootstrap-checkbox.css"/>
+   <link rel="stylesheet" href="bootstrap.css"/>
     <title>vue-sofine</title>
   </head>
   <body>
@@ -30,7 +37,16 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+  
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-material@beta"></script>
+    <script>
+      Vue.use(VueMaterial.default)
 
+      new Vue({
+        el: '#app'
+      })
+    </script>
     <script type="text/javascript" src="./assets2/js/jquery-3.3.1.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="./assets2/js/popper.min.js"></script>

@@ -4,6 +4,12 @@ import Home from './components/home.vue'
 import Sign_In from './components/signIn.vue'
 import CustDashboard from './components/dashBoard.vue'
 import GuestNav from './components/guestNav.vue'
+
+import MyService from './components/myService.vue'
+import MySupport from './components/mySupport.vue'
+import MyProfile from './components/myProfile.vue'
+import Setting from './components/setting.vue'
+import ManageJob from './components/manageJob.vue'
 import HomeDashboard from './components/homeDashboard.vue'
 
 vue.use(Router)
@@ -31,6 +37,32 @@ routes: [
 		component: Home
 	},
 	{
+		path: '/myService',
+		name: 'myService',
+		component: MyService
+	},
+	{
+		path: '/mySupport',
+		name: 'mySupport',
+		component: MySupport
+	},
+
+	{
+		path: '/myprofile',
+		name: 'myprofile',
+		component: MyProfile
+	},
+	{
+		path: '/setting',
+		name: 'setting',
+		component: Setting
+	},
+	{
+		path: '/manageJob',
+		name: 'manageJob',
+		component: ManageJob
+},
+  {
 		path: '/homedash',
 		name: 'homedash',
 		component: HomeDashboard
