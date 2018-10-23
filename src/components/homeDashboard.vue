@@ -17,7 +17,7 @@
 
       <!--First slide-->
       <div class="carousel-item active">
-        <div class="view" style="background-image: url('./assets2/img/caro1.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="view" style="background-image: url('./assets2/img/caro/caro21.jpg'); background-repeat: no-repeat; background-size: cover;">
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -51,7 +51,7 @@
 
       <!--Second slide-->
       <div class="carousel-item">
-        <div class="view" style="background-image: url('./assets2/img/caro1.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="view" style="background-image: url('./assets2/img/caro/caro20.jpg'); background-repeat: no-repeat; background-size: cover;">
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -85,7 +85,7 @@
 
       <!--Third slide-->
       <div class="carousel-item">
-        <div class="view" style="background-image: url('./assets2/img/caro1.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="view" style="background-image: url('./assets2/img/caro/caro22.jpg'); background-repeat: no-repeat; background-size: cover;">
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -156,18 +156,18 @@
           <!-- Links -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">All
+              <a class="nav-link" v-on:click="side('categAll')">All
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shirts</a>
+              <a class="nav-link" v-on:click="side('categCorp')">Corporate</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sport wears</a>
+              <a class="nav-link" v-on:click="side('categNative')">Native</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Outwears</a>
+              <a class="nav-link" v-on:click="side('categSuite')">Suite</a>
             </li>
 
           </ul>
@@ -184,390 +184,20 @@
       </nav>
       <!--/.Navbar-->
 
-      <!--Section: Products v.3-->
-      <section class="text-center mb-4">
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-8 mb-4">
-
-            <!--Card-->
-            <md-card>
-            <md-card-area md-inset>
-              <md-card-header>
-                <md-avatar>
-                  <img src="/assets/img/faces/avatar.jpg" alt="Avatar">
-                </md-avatar>
-
-                <div class="md-title">Title goes here</div>
-                <div class="md-subhead">Subtitle here</div>
-              </md-card-header>
-
-              <md-card-media>
-                <img src="/assets/img/cover.jpg" alt="cover">
-              </md-card-media>
-
-              <md-card-content>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea nostrum.
-              </md-card-content>
-              </md-card-area>
-
-
-              <md-card-content md-alignment="right">
-                  <md-menu>
-                    <md-button class="md-icon-button" md-menu-trigger>
-                      <md-icon>menu</md-icon>
-                    </md-button>
-                    <md-menu-content>
-                      <md-menu-item>
-                        <md-icon>hearth</md-icon>
-                        <span>Gigs i love</span>
-                      </md-menu-item>
-
-                      <md-menu-item>
-                        <md-icon>phone</md-icon>
-                        <span>My Item 2</span>
-                      </md-menu-item>
-
-                      <md-menu-item>
-                        <md-icon>add</md-icon>
-                        <span>Creat list</span>
-                      </md-menu-item>
-                    </md-menu-content>
-                  </md-menu>
-
-                <md-menu md-size="big" md-direction="bottom-end">
-                  <md-button class="md-icon-button" md-menu-trigger>
-                    <md-icon>favorite</md-icon>
-                  </md-button>
-                </md-menu>
-              </md-card-content>
-
-              <md-card-actions>
-                <md-button>Action</md-button>
-                <md-button>Action</md-button>
-              </md-card-actions>
-              
-            </md-card>
-
-            <!--Card-->
-
+      <div>
+          <div v-if="categoAll">
+            <CategAll></CategAll>
           </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-8 mb-4">
-
-            <!--Card-->
-            <md-card>
-              <md-card-header>
-                <md-avatar>
-                  <img src="/assets/img/faces/avatar.jpg" alt="Avatar">
-                </md-avatar>
-
-                <div class="md-title">Title goes here</div>
-                <div class="md-subhead">Subtitle here</div>
-              </md-card-header>
-
-              <md-card-media>
-                <img src="/assets/img/cover.jpg" alt="cover">
-              </md-card-media>
-
-              <md-card-content>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea nostrum.
-              </md-card-content>
-
-              <md-card-actions>
-                <md-button>Action</md-button>
-                <md-button>Action</md-button>
-              </md-card-actions>
-            </md-card>
-            <!--Card-->
-
+           <div v-if="categoCorp">
+              <CategCorp></CategCorp>
           </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Card-->
-            <md-card>
-              <md-card-header>
-                <md-avatar>
-                  <img src="/assets/img/faces/avatar.jpg" alt="Avatar">
-                </md-avatar>
-
-                <div class="md-title">Title goes here</div>
-                <div class="md-subhead">Subtitle here</div>
-              </md-card-header>
-
-              <md-card-media>
-                <img src="/assets/img/cover.jpg" alt="cover">
-              </md-card-media>
-
-              <md-card-content>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea nostrum.
-              </md-card-content>
-
-              <md-card-actions>
-                <md-button>Action</md-button>
-                <md-button>Action</md-button>
-              </md-card-actions>
-            </md-card>
-            <!--Card-->
-
+          <div v-if="categoNative">
+              <CategNative></CategNative>
           </div>
-          <!--Grid column-->
-
-          <!--Fourth column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Card-->
-            <md-card>
-              <md-card-header>
-                <md-avatar>
-                  <img src="/assets/img/faces/avatar.jpg" alt="Avatar">
-                </md-avatar>
-
-                <div class="md-title">Title goes here</div>
-                <div class="md-subhead">Subtitle here</div>
-              </md-card-header>
-
-              <md-card-media>
-                <img src="/assets/img/cover.jpg" alt="cover">
-              </md-card-media>
-
-              <md-card-content>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea nostrum.
-              </md-card-content>
-
-              <md-card-actions>
-                <md-button>Action</md-button>
-                <md-button>Action</md-button>
-              </md-card-actions>
-            </md-card>
-            <!--Card-->
-
+           <div v-if="categoSuite">
+              <CategSuite></CategSuite>
           </div>
-          <!--Fourth column-->
-
-        </div>
-        <!--Grid row-->
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Card-->
-            <div class="card">
-
-              <!--Card image-->
-              <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg" class="card-img-top" alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Card image-->
-
-              <!--Card content-->
-              <div class="card-body text-center">
-                <!--Category & Title-->
-                <a href="" class="grey-text">
-                  <h5>Shirt</h5>
-                </a>
-                <h5>
-                  <strong>
-                    <a href="" class="dark-grey-text">Denim shirt
-                      <span class="badge badge-pill danger-color">NEW</span>
-                    </a>
-                  </strong>
-                </h5>
-
-                <h4 class="font-weight-bold blue-text">
-                  <strong>120$</strong>
-                </h4>
-
-              </div>
-              <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Card-->
-            <div class="card">
-
-              <!--Card image-->
-              <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg" class="card-img-top" alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Card image-->
-
-              <!--Card content-->
-              <div class="card-body text-center">
-                <!--Category & Title-->
-                <a href="" class="grey-text">
-                  <h5>Sport wear</h5>
-                </a>
-                <h5>
-                  <strong>
-                    <a href="" class="dark-grey-text">Sweatshirt</a>
-                  </strong>
-                </h5>
-
-                <h4 class="font-weight-bold blue-text">
-                  <strong>139$</strong>
-                </h4>
-
-              </div>
-              <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Card-->
-            <div class="card">
-
-              <!--Card image-->
-              <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg" class="card-img-top" alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Card image-->
-
-              <!--Card content-->
-              <div class="card-body text-center">
-                <!--Category & Title-->
-                <a href="" class="grey-text">
-                  <h5>Sport wear</h5>
-                </a>
-                <h5>
-                  <strong>
-                    <a href="" class="dark-grey-text">Grey blouse
-                      <span class="badge badge-pill primary-color">bestseller</span>
-                    </a>
-                  </strong>
-                </h5>
-
-                <h4 class="font-weight-bold blue-text">
-                  <strong>99$</strong>
-                </h4>
-
-              </div>
-              <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-          </div>
-          <!--Grid column-->
-
-          <!--Fourth column-->
-          <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Card-->
-            <div class="card">
-
-              <!--Card image-->
-              <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top" alt="">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--Card image-->
-
-              <!--Card content-->
-              <div class="card-body text-center">
-                <!--Category & Title-->
-                <a href="" class="grey-text">
-                  <h5>Outwear</h5>
-                </a>
-                <h5>
-                  <strong>
-                    <a href="" class="dark-grey-text">Black jacket</a>
-                  </strong>
-                </h5>
-
-                <h4 class="font-weight-bold blue-text">
-                  <strong>219$</strong>
-                </h4>
-
-              </div>
-              <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-          </div>
-          <!--Fourth column-->
-
-        </div>
-        <!--Grid row-->
-
-      </section>
-      <!--Section: Products v.3-->
-
-      <!--Pagination-->
-      <nav class="d-flex justify-content-center wow fadeIn">
-        <ul class="pagination pg-blue">
-
-          <!--Arrow left-->
-          <li class="page-item disabled">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-              <span class="sr-only">Previous</span>
-            </a>
-          </li>
-
-          <li class="page-item active">
-            <a class="page-link" href="#">1
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">2</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">3</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">4</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">5</a>
-          </li>
-
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-              <span class="sr-only">Next</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!--Pagination-->
+      </div>
 
     </div>
   </main>
@@ -578,7 +208,7 @@
 
     <!--Call to action-->
     <div class="pt-4">
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Download MDB
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Make special order
         <i class="fa fa-download ml-2"></i>
       </a>
       <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Start free tutorial
@@ -625,13 +255,6 @@
     </div>
     <!-- Social icons -->
 
-    <!--Copyright-->
-    <div class="footer-copyright py-3">
-      © 2018 Copyright:
-      <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap.com </a>
-    </div>
-    <!--/.Copyright-->
-
   </footer>
   <!--/.Footer-->
 
@@ -642,19 +265,49 @@
 </template>
 
 <script>
- document.write(new Date().getFullYear())
+        import CategAll from './categAll.vue'
+        import CategCorp from './categCorp.vue'
+        import CategNative from './categNative.vue'
+        import CategSuite from './categSuite.vue' 
+       document.write(new Date().getFullYear())
 
 export default {
   name: 'HomeDashboard',
-   methods: {
-      sendMessage () {
-        window.alert('Send a message...')
-      },
-      doACall () {
-        window.alert('Calling someone...')
-      }
+   props: {
+    categAll: Boolean,
+    categCorp: Boolean,
+    categNative: Boolean,
+    categSuite: Boolean
+
     },
+   data() {
+        return {
+        categoAll: true,
+        categoCorp: false,
+        categoNative: false,
+        categoSuite: false
+        }
+          },
+        methods: {
+        sendMessage () {
+              window.alert('Send a message...')
+            },
+            doACall () {
+              window.alert('Calling someone...')
+            },
+        side(show)
+          {
+            if(show == 'categAll'){this.categoAll=true} else{this.categoAll=false}
+            if(show == 'categCorp'){this.categoCorp=true} else{this.categoCorp=false}
+            if(show == 'categNative'){this.categoNative=true} else{this.categoNative=false}
+            if(show == 'categSuite'){this.categoSuite=true} else{this.categoSuite=false}
+          }
+        },
   components: {
+      CategAll,
+      CategCorp,
+      CategNative,
+      CategSuite
   }
 }
 </script>
@@ -687,47 +340,19 @@ html,
     }
 
     .md-card {
-    width: 320px;
+
+    width: 270px;
     margin: 4px;
     display: inline-block;
     vertical-align: top;
   }
-
-  .md-card-example {
-    .md-subhead {
-      .md-icon {
-        $size: 16px;
-
-        width: $size;
-        min-width: $size;
-        height: $size;
-        font-size: $size !important;
-      }
-
-      span {
-        vertical-align: middle;
-      }
-    }
-
-    .card-reservation {
-      margin-top: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      .md-icon {
-        margin: 8px;
-      }
-    }
-
-    .md-button-group {
-      display: flex;
-
-      .md-button {
-        min-width: 60px;
-        border-radius: 2px;
-      }
-    }
+  .md-card-area .photo img{
+    width: 100%;
+    height: 200px;
   }
 
+  
+.pricef{
+  font-size: 20px;
+}
 </style>

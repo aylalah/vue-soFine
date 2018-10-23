@@ -4,19 +4,19 @@
     <div class="sidebar" data-color="purple" data-background-color="white" data-image="./assets/img/sidebar-1.jpg">
       <div class="logo">
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+          <strong>SoFine</strong>
         </a>
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
-            <a class="nav-link" href="./dashboard.html">
+          <li class="nav-item active" v-on:click="side('homeDash')">
+            <a class="nav-link" href="#">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./user.html">
+          <li class="nav-item " v-on:click="side('message')">
+            <a class="nav-link" href="#">
               <i class="fa fa-envelope"></i>
               <p>Messager</p>
             </a>
@@ -65,7 +65,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#">Dashboard</a>
+            <a class="navbar-brand" href="#"><strong>{{ title }}</strong></a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -85,7 +85,7 @@
             </form>
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#" v-on:click="side('homeDash')">
                   <i class="material-icons">dashboard</i>
                   <p class="d-lg-none d-md-block">
                     Stats
@@ -123,7 +123,15 @@
       <!-- End Navbar -->
       <div class="content">
         <div>
+          <div v-if="homesDash">
           <HomeDashboard></HomeDashboard>
+      </div>
+       <div v-if="messager">
+          <message></message>
+      </div>
+      <div v-if="productP">
+          <ProductPage></productPage>
+      </div>
         </div>
       </div>
       <footer class="footer">
@@ -131,22 +139,22 @@
           <nav class="float-left">
             <ul>
               <li>
-                <a href="https://www.creative-tim.com">
-                  Creative Tim
+                <a href="#">
+                  SoFine-Tim
                 </a>
               </li>
               <li>
-                <a href="https://creative-tim.com/presentation">
+                <a href="#">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="http://blog.creative-tim.com">
+                <a href="#">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="https://www.creative-tim.com/license">
+                <a href="#">
                   Licenses
                 </a>
               </li>
@@ -166,21 +174,42 @@
 </template>
 
 <script>
-import HomeDashboard from './homeDashboard.vue'
-import Message from './message.vue'
+        import ProductPage from './product-page.vue'
+        import HomeDashboard from './homeDashboard.vue'
+        import Message from './message.vue'
 
  document.write(new Date().getFullYear())
 
 export default {
   name: 'CustDashboard',
-  data: () => ({
-      boolean: true
-    }),
-  components: {
-  HomeDashboard,
-  Message
-  }
-}
+  props: {
+    homeDash: Boolean,
+    message: Boolean,
+    view: Boolean,
+
+    },
+    data() {
+        return {
+        homesDash: true,
+        messager: false,
+        boolean: true,
+        title: "Dashboard",
+        productP: true
+        }
+          },
+        methods: {
+        side(show)
+          {
+            if(show == 'homeDash'){this.homesDash=true; this.title= "Dashboard"}else{this.homesDash=false}
+            if(show == 'message'){this.messager=true; this.title="Message"}else{this.messager=false}
+          }
+        },
+        components: {
+        HomeDashboard,
+        Message,
+        ProductPage
+        }
+      }
 </script>
 
 <style  >
