@@ -3326,7 +3326,7 @@ tbody.collapse.show {
   .card-headers:first-child {
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
   .card-headers + .list-groups .list-groups-item:first-child {
-    border-top: 0; }
+   border-top: 0; }
 
 .card-footer {
   padding: 0.75rem 1.25rem;
