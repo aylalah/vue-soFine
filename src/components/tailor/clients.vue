@@ -1,119 +1,22 @@
 <template>
-<div class="container
-">
-<!-- Card -->
-<div class="card">
-<div class="row">
-   <div class="col-md-6">
-    <div class="avatar mx-auto white">
-      <img src="assets2/img/female.png" class="rounded-circle" alt="woman avatar">
-    </div>
-    </div>
-  <!-- Content -->
-    <div class="card-body">
-                 
-                 <span class="full-cli"><b>Client Details</b></span>
-                 <div>Fullname<span style="float:right">Delight delight</span></div>
-                 <hr>
-                 <div>Username<span style="float:right">Delight99</span></div>
-                 <hr>
-                 <div>Email<span style="float:right">delightolarinde@gmail.com</span></div>
-                 <hr>
-                 <div>Phone Number<span style="float:right">08012345678</span></div>
-                 <hr>
-                 <div>Address<span style="float:right">Pako street,Illy</span></div>
-                 <hr>
-                       
-    </div>
-</div>
-</div>
-<!-- Card -->
 <div>
-  <div class="card">
-          <div class="card-header">
-
-          <ul class="nav nav-pills card-header-pills" id="myTabEx" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active show" id="style-tab-ex" data-toggle="tab" href="#home-ex" role="tab" aria-controls="home-ex" aria-selected="true">Style</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="measure-tab-ex" data-toggle="tab" href="#profile-ex" role="tab" aria-controls="profile-ex" aria-selected="false">Measurement</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="job-tab-ex" data-toggle="tab" href="#contact-ex" role="tab" aria-controls="contact-ex" aria-selected="false">Past jobs</a>
-            </li>
-          </ul>
-          </div>
-<div class="tab-content pt-5 card-body" id="myTabContentEx">
-  <div class="tab-pane fade active show" id="home-ex" role="tabpanel" aria-labelledby="style-tab-ex">
-  <!--Content-->
-         <div class="card" style=" height: 560px;
-    width:350px;">
-            <img class="card-img-top" style=" height: 400px;
-    width:350px;" src="assets2/img/log4.jpg">
-            <div class="card-body">
-              <h4 class="card-title">Job Description</h4>
-              <p class="card-text">Native</p>
-              <button class="btn btn-success">Job Over</button>
-            </div>
-          </div>
-          <!--Content-->
-  </div>
-  <div class="tab-pane fade" id="profile-ex" role="tabpanel" aria-labelledby="measure-tab-ex">
-    <ul class="list-group list-group-flush">
-          <list  class="list-group-item text-left">Type:Gown</list>
-          <list class="list-group-item text-left">Full length - 52inches</list>
-          <list class="list-group-item text-left">Back - 15inches</list>
-          <list class="list-group-item text-left">Bust - 38inches</list>
-          <list class="list-group-item text-left">Under bust - 36inches</list>
-          <list class="list-group-item text-left">Slim waist - 28inches</list>
-          <list class="list-group-item text-left">Half length - 40inches</list>
-          <list class="list-group-item text-left">Hip waist - 34inches</list>
-          <list class="list-group-item text-left">Hip line - 14inches</list>
-          <list class="list-group-item text-left">Waist line - 14inches</list>
-          <list class="list-group-item text-left">Sleeve - 8inches</list>
-          <list class="list-group-item text-left">Shoulder circumference - 17inches</list>
-  </ul>
-</div>
-  <div class="tab-pane fade" id="contact-ex" role="tabpanel" aria-labelledby="job-tab-ex">
-   <div class="container">
-          <div class="row">
-          <div class="col-md-4">
-                  <div class="card" style=" height: 500px;width:350px;">
-                    <img class="card-img-top" style=" height: 400px;width:350px;" src="assets2/img/log4.jpg">
-                    <br>
-                    <div class="card-body">
-                      <h4 class="card-title">Job Description</h4>
-                      <p class="card-text">Native</p>
-                    </div>
-                  </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card" style=" height: 500px;width:350px;" >
-                  <img class="card-img-top" style=" height: 400px;width:350px;" src="assets2/img/log4.jpg">
-                  <div class="card-body">
-                    <h4 class="card-title">Job Description</h4>
-                    <p class="card-text">Native</p>
-                    
-                  </div>
-                </div>
-          </div>
-          <div class="col-md-4">
-              <div class="card" style=" height: 500px;width:350px;" >
-                  <img class="card-img-top" style=" height: 400px; width:350px;" src="assets2/img/log4.jpg">
-                  <div class="card-body">
-                    <h4 class="card-title">Job Description</h4>
-                    <p class="card-text">Native</p>
-                 
-                  </div>
-                </div>
-          </div>
-      </div>
-      </div>
-  </div>
-</div>
-</div>
-</div>
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="height:75px; font-size:25px">
+  <span><img class="card-img-top rounded-circle" src="assets2/img/male.png" alt="Customer's image">
+  Delight (Gown)</span>
+    <i class="fa fa-caret-right" aria-hidden="true"></i>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="height:75px; font-size:25px">
+  <span><img class="card-img-top rounded-circle" src="assets2/img/male.png" alt="Customer's image">
+    Ayolala(Agbada)</span>
+    <i class="fa fa-caret-right" aria-hidden="true"></i>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center" style="height:75px; font-size:25px">
+  <span><img class="card-img-top rounded-circle" src="assets2/img/male.png" alt="Customer's image">
+    Tawa(Skirt and Blouse)</span>
+    <i class="fa fa-caret-right" aria-hidden="true"></i>
+  </li>
+</ul>
 </div>
 </template>
 
@@ -121,7 +24,7 @@
 import { Row, Column, Btn, Card, CardBody, CardHeader, CardText, Fa, BarChart, PieChart, LineChart, RadarChart, DoughnutChart, ListGroup, ListGroupItem, Badge, Modal, ModalHeader, ModalTitle, ModalBody, ModalFooter } from 'mdbvue'
 
 export default {
-  name: 'Manage_Job',
+  name: 'Client',
   components: {
     Row,
     Column,
@@ -342,5 +245,8 @@ export default {
 .classic-admin-card .card-body h4 {
   margin-top: 10px;
 }
-
+img{
+  height:50px;
+  width:50px;
+}
 </style>

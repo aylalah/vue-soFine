@@ -8,6 +8,8 @@ import customerDashboard from './components/customer/customer-dashboard'
 import tailorDashboard from './components/tailor/tailor-dashboard'
 import Manage from './components/tailor/manage'
 import Manage_Job from './components/tailor/manage-jobs'
+import Client from './components/tailor/clients'
+import Detail from './components/tailor/details'
 // import Home from './components/home.vue'
 // import Sign_In from './components/signIn.vue'
 // import customerDashboard from './components/customer/dashBoard.vue'
@@ -66,6 +68,16 @@ routes: [
 		path: '/managejobs',
 		name: 'manageobsj',
 		component: Manage_Job
+	},
+	{
+		path: '/clients',
+		name: 'clients',
+		component: Client
+	},
+		{
+		path: '/details',
+		name: 'details',
+		component: Detail
 	},
 	// 	path: '/signIn',
 	// 	name: 'sign',

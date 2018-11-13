@@ -34,49 +34,17 @@
 
           <ul class="nav nav-pills card-header-pills" id="myTabEx" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active show" id="style-tab-ex" data-toggle="tab" href="#home-ex" role="tab" aria-controls="home-ex" aria-selected="true">Style</a>
+              <a class="nav-link active show" id="All-tab-ex" data-toggle="tab" href="#home-ex" role="tab" aria-controls="home-ex" aria-selected="true">All jobs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="measure-tab-ex" data-toggle="tab" href="#profile-ex" role="tab" aria-controls="profile-ex" aria-selected="false">Measurement</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="job-tab-ex" data-toggle="tab" href="#contact-ex" role="tab" aria-controls="contact-ex" aria-selected="false">Past jobs</a>
+              <a class="nav-link" id="pend-tab-ex" data-toggle="tab" href="#profile-ex" role="tab" aria-controls="profile-ex" aria-selected="false">Pending</a>
             </li>
           </ul>
           </div>
 <div class="tab-content pt-5 card-body" id="myTabContentEx">
-  <div class="tab-pane fade active show" id="home-ex" role="tabpanel" aria-labelledby="style-tab-ex">
+  <div class="tab-pane fade active show" id="home-ex" role="tabpanel" aria-labelledby="All-tab-ex">
   <!--Content-->
-         <div class="card" style=" height: 560px;
-    width:350px;">
-            <img class="card-img-top" style=" height: 400px;
-    width:350px;" src="assets2/img/log4.jpg">
-            <div class="card-body">
-              <h4 class="card-title">Job Description</h4>
-              <p class="card-text">Native</p>
-              <button class="btn btn-success">Job Over</button>
-            </div>
-          </div>
-          <!--Content-->
-  </div>
-  <div class="tab-pane fade" id="profile-ex" role="tabpanel" aria-labelledby="measure-tab-ex">
-    <ul class="list-group list-group-flush">
-          <list  class="list-group-item text-left">Type:Gown</list>
-          <list class="list-group-item text-left">Full length - 52inches</list>
-          <list class="list-group-item text-left">Back - 15inches</list>
-          <list class="list-group-item text-left">Bust - 38inches</list>
-          <list class="list-group-item text-left">Under bust - 36inches</list>
-          <list class="list-group-item text-left">Slim waist - 28inches</list>
-          <list class="list-group-item text-left">Half length - 40inches</list>
-          <list class="list-group-item text-left">Hip waist - 34inches</list>
-          <list class="list-group-item text-left">Hip line - 14inches</list>
-          <list class="list-group-item text-left">Waist line - 14inches</list>
-          <list class="list-group-item text-left">Sleeve - 8inches</list>
-          <list class="list-group-item text-left">Shoulder circumference - 17inches</list>
-  </ul>
-</div>
-  <div class="tab-pane fade" id="contact-ex" role="tabpanel" aria-labelledby="job-tab-ex">
-   <div class="container">
+        <div class="container">
           <div class="row">
           <div class="col-md-4">
                   <div class="card" style=" height: 500px;width:350px;">
@@ -109,8 +77,16 @@
                 </div>
           </div>
       </div>
-      </div>
+          <!--Content-->
   </div>
+  </div>
+    <div class="tab-pane fade" id="profile-ex" role="tabpanel" aria-labelledby="pend-tab-ex">
+              
+      <div class="container">
+       <div class="text-center" id="pend"><b>No Pending Job</b></div>
+      </div>
+
+    </div>
 </div>
 </div>
 </div>
@@ -121,7 +97,7 @@
 import { Row, Column, Btn, Card, CardBody, CardHeader, CardText, Fa, BarChart, PieChart, LineChart, RadarChart, DoughnutChart, ListGroup, ListGroupItem, Badge, Modal, ModalHeader, ModalTitle, ModalBody, ModalFooter } from 'mdbvue'
 
 export default {
-  name: 'Manage_Job',
+  name: 'Detail',
   components: {
     Row,
     Column,
